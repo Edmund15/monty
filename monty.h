@@ -68,11 +68,16 @@ void pop(stack_t **stack, unsigned int line_number);
 void stack_push(stack_t **stack, int n);
 void stack_swap(stack_t **stack, unsigned int line_number);
 void stack_add(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+
 void stack_pop(stack_t **stack, unsigned int line_number);
 void stack_nop(stack_t **stack, unsigned int line_number);
 int main(int argc, char *argv[]);
 void free_stack(stack_t *stack);
 void execute(char *content, stack_t **stack, unsigned int counter, FILE *file __attribute__((unused)));
-
+void sub(stack_t **stack, unsigned int line_number);
+void div_op(stack_t **stack, unsigned int line_number);
+void mul_op(stack_t **stack, unsigned int line_number);
+void mod_op(stack_t **stack, unsigned int line_number);
 
 #endif /* _MONTY_H_ */
