@@ -10,6 +10,7 @@
 #include <string.h>
 #include <ctype.h>
 
+extern int current_mode;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -79,5 +80,11 @@ void sub(stack_t **stack, unsigned int line_number);
 void div_op(stack_t **stack, unsigned int line_number);
 void mul_op(stack_t **stack, unsigned int line_number);
 void mod_op(stack_t **stack, unsigned int line_number);
-
+void pchar(stack_t **stack, unsigned int line_number);
+void pstr(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
+void execute_custom_opcode(char *line, stack_t **stack, unsigned int line_number);
+void enqueue(stack_t **queue, int value);
+void free_stack(stack_t *stack);
 #endif /* _MONTY_H_ */

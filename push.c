@@ -18,5 +18,8 @@ void push(stack_t **stack, unsigned int line_number)
 
 	n = atoi(arg);
 
-	stack_push(stack, n);
+	if (current_mode == 0)
+        stack_push(stack, n);
+    else
+        enqueue(stack, n);
 }
