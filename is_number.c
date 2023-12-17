@@ -9,8 +9,8 @@ int is_number(const char *str)
 {
 	 if (!str)
         return (0);
-
-    for (int i = 0; str[i]; i++)
+     int i;
+    for (i = 0; str[i]; i++)
     {
         if (!isdigit(str[i]) && str[i] != '-')
             return (0);

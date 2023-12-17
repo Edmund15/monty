@@ -87,4 +87,7 @@ void rotr(stack_t **stack, unsigned int line_number);
 void execute_custom_opcode(char *line, stack_t **stack, unsigned int line_number);
 void enqueue(stack_t **queue, int value);
 void free_stack(stack_t *stack);
+void stack_push(stack_t **stack, int n);
+int main(int argc, char *argv[]);
+int execute_custom_opcode(stack_t **stack, char *opcode, unsigned int line_number);
 #endif /* _MONTY_H_ */
