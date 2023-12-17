@@ -3,7 +3,7 @@
 /**
  * pop - Removes the top element of the stack.
  * @stack: A pointer to the top of the stack.
- * @line_number: The line number in the Monty byte code file.
+ * @line_number: The line number in the Monty file.
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
@@ -16,10 +16,10 @@ void pop(stack_t **stack, unsigned int line_number)
     }
 
     temp = *stack;
-    *stack = (*stack)->next;
+    *stack = temp->next;
 
     if (*stack != NULL)
         (*stack)->prev = NULL;
+
     free(temp);
 }
-

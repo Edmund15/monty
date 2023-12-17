@@ -1,7 +1,8 @@
 #include "monty.h"
+
 /**
- * free_stack - Frees the stack
- * @stack: Pointer to the top of the stack
+ * free_stack - Frees a stack.
+ * @stack: A pointer to the top of the stack.
  */
 void free_stack(stack_t *stack)
 {
